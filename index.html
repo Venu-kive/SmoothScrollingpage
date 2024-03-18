@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Scrolling Page with Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      margin-top: 60px; /* Adjusted for the fixed navbar */
+    }
+
+    .section-1 {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .section-2 {
+      background-color: #2ecc71;
+    }
+
+    .section-3 {
+      background-color: #e74c3c;
+      color: #fff;
+    }
+
+    .section-4 {
+      background-color: #f39c12;
+    }
+
+    .section-5 {
+      background-color: #9b59b6;
+      color: #fff;
+    }
+
+    /* Optional: Add a smooth scroll effect */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#section-1">Section 1</a>
+    <a href="#section-2">Section 2</a>
+    <a href="#section-3">Section 3</a>
+    <a href="#section-4">Section 4</a>
+    <a href="#section-5">Section 5</a>
+  </header>
+
+  <section id="section-1" class="section-1">
+    <p>Section 1 - Welcome to Smooth Scrolling Page</p>
+  </section>
+
+  <section id="section-2" class="section-2">
+    <p>Section 2 - Aesthetic Content Here</p>
+  </section>
+
+  <section id="section-3" class="section-3">
+    <p>Section 3 - More Aesthetic Content</p>
+  </section>
+
+  <section id="section-4" class="section-4">
+    <p>Section 4 - Keep Scrolling</p>
+  </section>
+
+  <section id="section-5" class="section-5">
+    <p>Section 5 - Last Section</p>
+  </section>
+
+</body>
+</html>
